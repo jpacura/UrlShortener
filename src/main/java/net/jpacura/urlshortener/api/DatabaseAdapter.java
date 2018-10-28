@@ -1,7 +1,9 @@
 package net.jpacura.urlshortener.api;
 
+import net.jpacura.urlshortener.model.ShortenedUrl;
+
 public interface DatabaseAdapter
 {
-    boolean createShortenedUrl(String fullUrl);
-    String getFullUrl(String shortenedUrl);
+    ShortenedUrl createShortenedUrl(String fullUrl);
+    ShortenedUrl getFullUrl(String shortenedUrl);
 }
